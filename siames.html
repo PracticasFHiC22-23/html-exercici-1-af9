@@ -1,98 +1,68 @@
 <!DOCTYPE html>
-<html>
-    <title>Siames</title>
-    <style>
-    * {
-    box-sizing: border-box; 
-    }
-    body {
-        margin: 0;
-    }
-    #main {
-        display: flex; /*Este es un comentario en HTML*/
-        min-height: calc(100vh - 16vh); /*Ajustem tots els elements a la pantalla sense desplaçar-nos*/
-    }
-    #main > article {
-        flex: 1;
-        background-color: white;
-        color:black;
-        text-align: left;
-        align-items: left;
-        margin-top: 5vh;
-        margin-right: 50vh;
-        margin-left: 10vh;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-    }
-    #main > nav {
-        flex: 0 0 10vw;
-        background: beige;
-        order: -1; /*Posem el mòdul de nav a l'esquerra*/
-        padding: 3vh;
-    }
-    
-    header {
-        background: rgb(220, 168, 72);
-        height: 8vh;
-        font-size: 4rem;
-        color: white;
-        text-align: center;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-weight: bold;
-    }
 
-    footer {
-        background: rgb(220, 168, 72);
-        height: 8vh;
-        font-size: 1rem;
-        color: white;
-        text-align: right;
-        padding-top: 30px;
-        padding-right: 30px;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        font-style: italic;
-    }
+<html lang="en">
 
-    r {
-        font-family: "Helvetica Neue", Arial Bold, sans-serif;
-        font-weight: bold;
-    }
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
 
-    p,a {
-        font-family: "Helvetica Neue", Arial Bold, sans-serif;
-    }
+<body>
 
-    button {
-        margin-top: 50vh;
-        background-color: rgb(220, 168, 72);
-    }
-    </style>
-    <body>
-    <header>Gatalia: la web de los gatos</header>
-    <div id="main">
-        <nav>
-            <r>Razas</r>
-            <ul type="point">
-                <li> <a href="siames.html">Siames</a> </li>
-                <br>
-                <li> <a href="persa.html">Persa</a> </li>
-            </ul>
-            <br>
-            <button onclick="window.location.href='form2.html'">Sobre tu <br>gato</button>
-        </nav>
-        <article>
-            <h1>Siames</h1>
-            <img src="./imagenes/Gato.JPG" alt="Gato" width="200" height="200">
-            <p>
-                El gato siamés es, junto al persa, una de las razas de gatos
-                más antiguas. Su origen se encuentra en Siam (sureste asiatico). Lorem Ipsum
-                is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                has been the industry's standard dummy text ever since the 1500s, when an
-                unknown printer took a galley of type and scrambled it to make a type
-                specimen book.
-            </p>
-        </article>
-        
+  <header class="header">
+    <div class="header-text">Gatalia: la web de los gatos</div>
+  </header>
+
+  <div class="container">
+
+    <div class="nav">
+      <div class="nav-list">
+        <div class="nav-header">
+          Razas
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="./siames.html"> Siames</a></li>
+            <li><a href="./persa.html"> Persa</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="./form.html">
+        <div class="nav-button">
+          Sobre tu gato
+        </div>
+      </a>
+
     </div>
-    <footer>Copyright FHiC 2023</footer>
-    </body>
+    <div class="context-witout-background">
+
+      <div class="context-title">
+        Siames
+      </div>
+
+      <div class="context-image">
+        <img src="img/Gato.JPG" alt="">
+      </div>
+
+      <div class="context-description">
+        Gatos Siames El gato siamés es, junto al persa, una de las razas de gatos
+        más antiguas. Su origen se encuentra en Siam (sureste asiatico). Lorem Ipsum
+        is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+        has been the industry's standard dummy text ever since the 1500s, when an
+        unknown printer took a galley of type and scrambled it to make a type
+        specimen book. Cuentanos como es tu gato! Copyright FHiC 2023
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-text"><i>Copyright FHiC 2023</i></div>
+  </footer>
+
+</body>
+
+
 </html>

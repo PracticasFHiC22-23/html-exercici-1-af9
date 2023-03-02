@@ -1,28 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head> </head>
-  <body>
-    <h1>Introduce los datos de tu gato</h1>
-    <form action="results.html">
-      <label for="name">Nombre:</label><br>
-      <input type="text" id="name" name="name"><br>
 
-      <label for="age">Edat:</label><br />
-      <input type="number" id="age" name="age" /><br />
+<html lang="en">
 
-      <label for="raza">Raza:</label><br />
-      <input type="text" id="raza" name="raza" /><br />
 
-      <label for="color">Color:</label><br>
-      <input type="color" id="color" name="color"><br>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
 
-      <input type="submit" value="Submit" />
-    </form> 
+<body>
 
-    <p></p>
 
-    <p>
-      <i>Copyright FHiC 2023</i>
-    </p>
-  </body>
+  <header class="header">
+    <div class="header-text">Gatalia: la web de los gatos</div>
+  </header>
+
+  <div class="container">
+
+    <div class="nav">
+      <div class="nav-list">
+        <div class="nav-header">
+          Razas
+        </div>
+        <div class="nav-items">
+          <ul>
+            <li><a href="./siames.html"> Siames</a></li>
+            <li><a href="./persa.html"> Persa</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="">
+        <div class="nav-button">
+          Sobre tu gato
+        </div>
+      </a>
+
+    </div>
+    <div class="context-form">
+      <div class="form-title">
+        Introduce los datos de tu gato
+      </div>
+      <div class="form-box">
+        <form action="./results.html" class="gat-form">
+          <div class="form-name">Nombre:</div>
+          <input type="text" name="" id="" class="form-input-text" placeholder="Mishi">
+          <div class="form-age">Edat:</div>
+          <input type="text" name="" id="" class="form-input-edat" placeholder="3">
+          <a href="./results.html">
+            <div type="submit" class="form-button">Guardar</div>
+          </a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-text"><i>Copyright FHiC 2023</i></div>
+  </footer>
+
+
+
+
+</body>
+
 </html>
