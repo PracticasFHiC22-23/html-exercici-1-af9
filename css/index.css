@@ -2,6 +2,9 @@
     margin: 0 auto;
 }
 
+a:link{
+    color: #000;
+}
 
 .header{
     display: flex;
@@ -97,6 +100,80 @@ ul{
     margin-left: 20px;
 }
 
+.context-form{
+    display: flex;
+    flex-direction: column;
+    width: 87%;
+}
+
+.form-title{
+    font-size: 36px;
+    color: #000;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-box{
+    width: 450px;
+    background-color: rgb(188, 223, 228);
+    border: 1px rgb(138, 135, 135) solid;
+    border-radius: 10px;
+}
+
+.form-name, 
+.form-age{
+    font-size: 24px;
+    font-weight: normal;
+    color: #000;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.form-input-text,
+.form-input-edat{
+    width: 95%;
+    height: 40px;
+    border: 1px rgb(138, 135, 135) solid;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    color: #000;
+}
+
+.form-input-text::placeholder,
+.form-input-edat::-moz-placeholder {
+    padding-left: 20px;
+    color:#000000;
+    font-size: 18px;
+    opacity: 1;
+}
+
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 45px;
+    background-color: rgb(38, 194, 142);
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.gat-form a{
+text-decoration:none;
+}
+
+
+
 .context-text{
     display: flex;
     justify-content: center;    
@@ -125,4 +202,6 @@ ul{
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
+
 
