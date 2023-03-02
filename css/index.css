@@ -49,6 +49,7 @@
     flex-direction: column;
     justify-content: space-between; /* [x    x    x] */
     width: 13%;
+    background-color: rgb(231, 233, 233);
 
 }
 
@@ -90,6 +91,11 @@ ul{
    background-size: cover;
 }
 
+.context-witout-background{
+    width: 87%;
+    margin-left: 20px;
+}
+
 .context-text{
     display: flex;
     justify-content: center;    
@@ -103,5 +109,19 @@ ul{
 }
 
 
+.context-title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+.context-image img{
+    width: 200px;
+} 
+
+.context-description{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
 
