@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <title>Exercici 1</title>
+    <style>
+    * {
+    box-sizing: border-box; 
+    }
+    body {
+        margin: 0;
+    }
+    #main {
+        display: flex; /*Este es un comentario en HTML*/
+        min-height: calc(100vh - 16vh); /*Ajustem tots els elements a la pantalla sense desplaçar-nos*/
+    }
+    #main > article {
+        flex: 1;
+        color: white;
+        background-image: url("./imagenes/Gato.JPG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 3rem;
+        padding-top: 15%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+    }
+    #main > nav {
+        flex: 0 0 10vw;
+        background: beige;
+        order: -1; /*Posem el mòdul de nav a l'esquerra*/
+        padding: 3vh;
+    }
+    
+    header {
+        background: rgb(220, 168, 72);
+        height: 8vh;
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    footer {
+        background: rgb(220, 168, 72);
+        height: 8vh;
+        font-size: 1rem;
+        color: white;
+        text-align: right;
+        padding-top: 30px;
+        padding-right: 30px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        font-style: italic;
+    }
+
+    p,a {
+        font-family: "Helvetica Neue", Arial Bold, sans-serif;
+        font-weight: bold;
+    }
+
+    button {
+        margin-top: 50vh;
+        background-color: rgb(220, 168, 72);
+    }
+    </style>
+    <body>
+    <header>Gatalia: la web de los gatos</header>
+    <div id="main">
+        <nav>
+            <p>Razas</p>
+            <ul type="point">
+                <li> <a href="siames.html">Siames</a> </li>
+                <br>
+                <li> <a href="persa.html">Persa</a> </li>
+            </ul>
+            <br>
+            <button onclick="window.location.href='form2.html'">Sobre tu <br>gato</button>
+        </nav>
+        <article>Si te gustan los gatos en <br>Gatalia puedes saber <br> mucho más!</article>
+        
+    </div>
+    <footer>Copyright FHiC 2023</footer>
+    </body>
+</html>
