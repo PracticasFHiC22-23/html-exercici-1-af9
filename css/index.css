@@ -73,7 +73,7 @@ ul{
 
 .nav-item{
     height: 60px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .nav-button{
@@ -87,11 +87,7 @@ ul{
 }
 
 .context{
-   display: flex;
-   justify-content: center;    
-   align-items: center;    
-   width: 87%;
-   background: url("../img/Gato.JPG") no-repeat;
+   /* background: url("../img/Gato.JPG") no-repeat; */
    background-size: cover;
 }
 
