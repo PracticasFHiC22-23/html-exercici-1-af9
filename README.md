@@ -4,9 +4,17 @@
 
 > https://practicasfhic22-23.github.io/html-exercici-1-af9/
 
+## About Web
+
+![cover1](./.etc/cover1.png) ![cover1](./.etc/cover2.png)
+
 ## Contributors
 
-Authors: [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit), [@Oscar Jaquero](https://github.com/OscarJaquero)
+Authors: [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https://github.com/TheExorcit), [@Oscar Jaquero](https://github.com/OscarJaquero).
+
+## Other
+
+IT'S 2022, Bootstrap is a SHIT, please use [tailwindcss](https://tailwindcss.com/).
 
 ## License
 
