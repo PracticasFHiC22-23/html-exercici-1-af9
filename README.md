@@ -14,7 +14,7 @@ Authors: [@Junjie Li](https://github.com/junjielyu13), [@Manuel Liu Wang](https:
 
 ## Other
 
-IT'S 2022, Bootstrap is a SHIT, please use [tailwindcss](https://tailwindcss.com/).
+IT'S 2023, Bootstrap is a SHIT, please use [tailwindcss](https://tailwindcss.com/).
 
 ## License
 
