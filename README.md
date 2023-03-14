@@ -1,3 +1,7 @@
+# THIS BRANCH IS FOR BOOTSTRAP
+
+---
+
 # <div align="center"> Factors Humans i Computació
 
 ## Web
