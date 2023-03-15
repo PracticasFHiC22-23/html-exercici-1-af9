@@ -1,17 +1,18 @@
 import { inject } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import gatoItem from "./gatoItem.js";
 
 export default {
+  components: {
+    gatoItem,
+  },
+
   setup() {
     const sharedState = inject("sharedState");
 
     return {
-      test: sharedState.message,
+      gatoList: sharedState.gatoList,
     };
   },
-
-  // props: {
-  //   gatoList,
-  // },
 
   template: `
       <div class="col-md-10 m-0 p-0 change-height-context h-100">
@@ -31,26 +32,7 @@ export default {
                   <th width="60%" align="left">Nombre</th>
                   <th width="40%" align="left">Edat</th>
                 </tr>
-                <tr class="table-secondary">
-                  <td>Gato</td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td>Tomillo</td>
-                  <td>3</td>
-                </tr>
-                <tr class="table-secondary">
-                  <td>Mishi</td>
-                  <td>8</td>
-                </tr>
-                <tr>
-                  <td>Dobby</td>
-                  <td>5</td>
-                </tr>
-                <tr class="table-secondary">
-                  <td>Test</td>
-                  <td>6</td>
-                </tr>
+                <gato-item v-for="gato in gatoList" :gato="gato" ></gato-item>
               </tbody>
             </table>
           </div>
@@ -61,7 +43,8 @@ export default {
 
           <div style="height: 50px;"></div>
 
-          <h1> {{ test }} </h1>
+
+
 
         </div>
       </div>`,
