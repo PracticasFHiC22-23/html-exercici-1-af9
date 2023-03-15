@@ -87,7 +87,7 @@ ul{
 }
 
 .context{
-   /* background: url("../img/Gato.JPG") no-repeat; */
+    background: url("../img/Gato.JPG") no-repeat; 
    background-size: cover;
 }
 
