@@ -1,6 +1,23 @@
+import {
+  provide,
+  reactive,
+} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
 export default {
-  data() {
-    return {};
+  setup() {
+    const sharedState = reactive({
+      message: "message",
+    });
+
+    provide("sharedState", sharedState);
+
+    return {
+      message: sharedState.message,
+    };
+  },
+
+  methods: {
+    guardar() {},
   },
 
   template: `
@@ -25,7 +42,7 @@ export default {
                 " id="exampleInputPassword1" placeholder="3">
               </div>
               <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-success">Guardar</button>
+                <button type="submit" class="btn btn-success" @click="guardar()">Guardar</button>
               </div>
             </form>
           </div>

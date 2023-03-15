@@ -1,3 +1,8 @@
+import {
+  provide,
+  reactive,
+} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
 import navComponent from "../components/navComponent.js";
 import homeComponent from "../components/homeComponent.js";
 import siamesComponent from "../components/siamesComponent.js";
@@ -24,6 +29,12 @@ export default {
   },
 
   data() {
+    const sharedState = reactive({
+      message: "message",
+    });
+
+    provide("sharedState", sharedState);
+
     return {
       currentPath: window.location.hash,
     };

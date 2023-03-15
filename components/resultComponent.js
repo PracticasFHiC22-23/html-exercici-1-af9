@@ -1,7 +1,18 @@
+import { inject } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+
 export default {
-  data() {
-    return {};
+  setup() {
+    const sharedState = inject("sharedState");
+
+    return {
+      test: sharedState.message,
+    };
   },
+
+  // props: {
+  //   gatoList,
+  // },
+
   template: `
       <div class="col-md-10 m-0 p-0 change-height-context h-100">
         <div class="d-flex flex-column justify-content-center" style="width: 87%; margin-left: 20px;">
@@ -50,6 +61,7 @@ export default {
 
           <div style="height: 50px;"></div>
 
+          <h1> {{ test }} </h1>
 
         </div>
       </div>`,
