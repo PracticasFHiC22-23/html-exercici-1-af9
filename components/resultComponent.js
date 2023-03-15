@@ -13,7 +13,7 @@ export default {
             Lista de gatos registradis
           </div>
 
-          <div class="mt-4 mb-4 table table-bordered ">
+          <div class="mt-4 mb-4 table table-bordered d-flex justify-content-center">
             <table class="border" style="width: 300px;">
               <tbody class="border">
                 <tr>
@@ -44,8 +44,8 @@ export default {
             </table>
           </div>
 
-          <div>
-            <a href="./index.html">Volver al inicio</a>
+          <div class="text-center">
+            <a href="#/home">Volver al inicio</a>
           </div>
 
           <div style="height: 50px;"></div>
