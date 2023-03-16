@@ -25,7 +25,8 @@ export default {
     resultComponent,
   },
 
-  setup() {
+  data() {
+
     const sharedState = reactive({
       gatoList: [{ name: "name1", age: 2 }],
     });
@@ -33,9 +34,8 @@ export default {
     provide("sharedState", sharedState);
 
     return {
-      currentPath: window.location.hash,
-      sharedState,
-    };
+      currentPath: window.location.hash
+    }
   },
 
   computed: {
@@ -45,9 +45,9 @@ export default {
   },
 
   mounted() {
-    window.addEventListener("hashchange", () => {
-      this.currentPath = window.location.hash;
-    });
+    window.addEventListener('hashchange', () => {
+		  this.currentPath = window.location.hash
+		});
   },
 
   template: `
@@ -57,7 +57,7 @@ export default {
 
       <nav-component></nav-component>
 
-      <component :is="currentView" />
+      <component :is="currentView " />
 
     </div>
   </div>

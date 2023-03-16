@@ -12,8 +12,8 @@
     <div id="app">
       <div>
         <h1>Ejercicio de eventos</h1>
-        <button>Incrementar contador</button>
-        <button style="margin-left:1rem">Decrementar contador</button>
+        <button v-on:click="numero++">Incrementar contador</button>
+        <button style="margin-left:1rem" v-on:click="numero--"> Decrementar contador</button>
         <p class="centrado">{{numero}}</p>
     </div>
   </body>

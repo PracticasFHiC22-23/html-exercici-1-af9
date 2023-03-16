@@ -1,14 +1,14 @@
-import { ref, inject } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { ref, inject } from "../js/vue.esm-browser.js";
 
 export default {
   setup() {
     var gatoName = ref("");
     var gatoAge = ref(0);
 
-    const sharedState = inject("sharedState");
+    // const sharedState = inject("sharedState");
 
     const guardar = () => {
-      sharedState.gatoList.push({ name: gatoName.value, age: gatoAge.value });
+      // sharedState.gatoList.push({ name: gatoName.value, age: gatoAge.value });
       gatoName.value = "";
       gatoAge.value = 0;
     };

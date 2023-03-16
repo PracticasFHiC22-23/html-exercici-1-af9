@@ -7,11 +7,11 @@ export default {
   },
 
   setup() {
-    const sharedState = inject("sharedState");
+    // const sharedState = inject("sharedState");
 
-    return {
-      gatoList: sharedState.gatoList,
-    };
+    // return {
+    //   gatoList: sharedState.gatoList,
+    // };
   },
 
   template: `
