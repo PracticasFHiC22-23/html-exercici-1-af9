@@ -1,0 +1,21 @@
+    .width-context {
+      height: 80vh;
+    }
+
+    @media (max-width: 768px) {
+      .change-height-nav {
+        height: 20vh;
+      }
+
+      .change-height-context {
+        height: 60vh;
+      }
+
+      .width-context {
+        height: 60%;
+      }
+    }
+
+tr:nth-child(even){
+    background-color: #e2e3e5;
+} 

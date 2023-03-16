@@ -87,7 +87,7 @@ ul{
 }
 
 .context{
-   /* background: url("../img/Gato.JPG") no-repeat; */
+    background: url("../img/Gato.JPG") no-repeat; 
    background-size: cover;
 }
 
@@ -225,6 +225,6 @@ th{
 }
 
 tr:nth-child(even){
-    background-color: rgb(201, 201, 201);
+    background-color: #e2e3e5;
 }  */
 

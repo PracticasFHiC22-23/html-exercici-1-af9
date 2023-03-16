@@ -8,7 +8,6 @@
    y se conecta con el html a traves de directivas v-*
 */
 
-
 const miapp = Vue.createApp({
   //data: function (){}
   //una propiedad llamada data que tiene una funcion como valor
@@ -30,4 +29,3 @@ const miapp = Vue.createApp({
   },
 });
 miapp.mount("#app");
-
