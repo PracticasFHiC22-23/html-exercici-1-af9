@@ -28,7 +28,7 @@ export default {
   data() {
 
     const sharedState = reactive({
-      gatoList: [{ name: "name1", age: 2 }],
+      gatoList: [],
     });
 
     provide("sharedState", sharedState);
