@@ -5,10 +5,10 @@ export default {
     var gatoName = ref("");
     var gatoAge = ref(0);
 
-    // const sharedState = inject("sharedState");
+    const sharedState = inject("sharedState");
 
     const guardar = () => {
-      // sharedState.gatoList.push({ name: gatoName.value, age: gatoAge.value });
+      sharedState.gatoList.push({ name: gatoName.value, age: gatoAge.value });
       gatoName.value = "";
       gatoAge.value = 0;
     };
