@@ -1,5 +1,9 @@
 # <div align="center"> Factors Humans i Computació
 
+## Version
+
+**refactory with Vue**
+
 ## Web
 
 > https://practicasfhic22-23.github.io/html-exercici-1-af9/
