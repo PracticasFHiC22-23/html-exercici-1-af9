@@ -1,4 +1,4 @@
-import { createApp } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { createApp } from "./vue.esm-browser.js";
 import hedearComponent from "../components/hedearComponent.js";
 import footerComponent from "../components/footerComponent.js";
 import containerComponent from "../components/containerComponent.js";

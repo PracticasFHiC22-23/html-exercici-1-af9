@@ -1,7 +1,4 @@
-import {
-  provide,
-  reactive,
-} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { ref, provide, reactive } from "../js/vue.esm-browser.js";
 
 import navComponent from "../components/navComponent.js";
 import homeComponent from "../components/homeComponent.js";
@@ -28,19 +25,16 @@ export default {
     resultComponent,
   },
 
-  data() {
+  setup() {
     const sharedState = reactive({
-      gatoList: [
-        { name: "name1", age: 1 },
-        { name: "name2", age: 2 },
-        { name: "name3", age: 3 },
-      ],
+      gatoList: [{ name: "name1", age: 2 }],
     });
 
     provide("sharedState", sharedState);
 
     return {
       currentPath: window.location.hash,
+      sharedState,
     };
   },
 

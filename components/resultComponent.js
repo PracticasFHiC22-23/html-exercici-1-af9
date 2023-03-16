@@ -1,4 +1,4 @@
-import { inject } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { inject } from "../js/vue.esm-browser.js";
 import gatoItem from "./gatoItem.js";
 
 export default {
@@ -42,9 +42,6 @@ export default {
           </div>
 
           <div style="height: 50px;"></div>
-
-
-
 
         </div>
       </div>`,

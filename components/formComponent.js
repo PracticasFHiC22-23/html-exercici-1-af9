@@ -1,29 +1,23 @@
-import {
-  provide,
-  reactive,
-} from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
+import { ref, inject } from "https://unpkg.com/vue@3/dist/vue.esm-browser.js";
 
 export default {
   setup() {
-    const sharedState = reactive({
-      gatoList: [
-        { name: "name1", age: 1 },
-        { name: "name2", age: 2 },
-        { name: "name3", age: 3 },
-      ],
-    });
+    var gatoName = ref("");
+    var gatoAge = ref(0);
 
-    provide("sharedState", sharedState);
+    const sharedState = inject("sharedState");
+
+    const guardar = () => {
+      sharedState.gatoList.push({ name: gatoName.value, age: gatoAge.value });
+      gatoName.value = "";
+      gatoAge.value = 0;
+    };
 
     return {
-      gatoList: sharedState.gatoList,
+      gatoName,
+      gatoAge,
+      guardar,
     };
-  },
-
-  methods: {
-    guardar() {
-      
-    },
   },
 
   template: `
@@ -39,16 +33,16 @@ export default {
             <form action="#/result">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nombre: </label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                  placeholder="Mishi">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                  placeholder="Mishi" v-model="gatoName">
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label">Edad: </label>
-                <input type="password" class="form-control mb-5
-                " id="exampleInputPassword1" placeholder="3">
+                <input type="number" class="form-control mb-5
+                " id="exampleInputPassword1" placeholder="3" v-model="gatoAge">
               </div>
               <div class="d-grid gap-2">
-                <button type="submit" class="btn btn-success" @click="guardar()">Guardar</button>
+                <button type="submit" class="btn btn-success" @click="guardar">Guardar</button>
               </div>
             </form>
           </div>
