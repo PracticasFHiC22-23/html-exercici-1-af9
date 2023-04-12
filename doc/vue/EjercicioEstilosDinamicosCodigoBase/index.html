@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World con Vue</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/vue@next"></script> 
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="app">
+      <div>
+        <h1>Ejercicios de eventos</h1>
+        <ol>
+        <li>
+          <p>Evento click en elementos buttons</p>
+          <button v-on:click="suma(2)">Incrementa</button>
+          <button v-on:click="contador--" style="margin-left:1rem">Decrementa</button>
+          <button v-on:click="reset" style="margin-left:1rem">Reset</button>
+          <p v-bind:style="{color: colorTexto}" class="centrado">{{contador}}</p>
+        </li>
+        <li>
+          <p>Objeto event en elemento input (tipo texto)</p>
+          <label>Escribe un texto </label>   <!--v-bind:value trae el dato desde Vue al elemento (valor inicial), y v-on:input lleva el input al dato de Vue, se pueden sustituir los 2 por v-model (con solo v-on no podria dar un valor inicial) -->
+          <input type="text" placeholder="Introduce un texto" v-bind:value="texto" v-on:input="setTexto">
+          <p>El texto: {{texto}}</p>
+        </li>
+        <li>
+          <p>v-model en elementos input (tipo number)</p>
+          <label>Escribe un numero </label>
+          <input type="number" placeholder="Introduce un numero" v-model="numero">
+          <p>El numero: {{numero}}</p>
+        </li>
+      </ol>
+    </section>
+  </body>
+</html>
